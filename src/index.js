@@ -1,9 +1,12 @@
 import {model} from './model';
-import './styles/main.css';
+import {Site} from './classes/site';
+import {SideBar} from "./classes/sidebar";
+import './styles/main.css'
 
-const $site = document.querySelector('site')
+const site = new Site('#site')
 
-model.forEach(block => {
-  $site.insertAdjacentHTML('beforeend', block.toHTML())
-  console.log('Hello!!!')
-})
+site.render(model)
+
+console.log('Test')
+
+const sidebar = new SideBar('#panel')

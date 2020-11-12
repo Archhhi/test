@@ -7,6 +7,6 @@ const site = new Site('#site')
 
 site.render(model)
 
-console.log('Test')
+console.log('Test!!!')
 
 const sidebar = new SideBar('#panel')
